@@ -4,7 +4,7 @@ set -e
 
 echo "Executing CodeOwl..."
 
-# Some deubgging stuff
+# Some debugging stuff
 echo "Path: ${PWD}"
 ls -la
 env
