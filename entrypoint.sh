@@ -1,5 +1,6 @@
-#!/bin/sh -l
+#!/bin/sh
 
-echo "Hello $1"
-time=$(date)
-echo "::set-output name=time::$time"
+set -e
+
+echo "Executing CodeOwl..."
+npx ts-node /action/src/main.ts
