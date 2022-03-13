@@ -55,7 +55,10 @@ const main = async () => {
 
   if (!token) throw "Unable to find a valid api token. Set your CODEOWL_API_KEY";
 
+  console.log("Retreiving data from the source code...")
   const data = await compute()
+
+  console.log('Data', data);
 
   console.log("Pushing data to codeowl.io...")
 
